@@ -1,0 +1,7 @@
+var a  = require('./a')
+var b  = require('./b')
+var c  = require('./c')
+a()
+b()
+c.test()
+c.test2()
