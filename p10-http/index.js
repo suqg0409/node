@@ -4,8 +4,13 @@ var http = require("http")
 var server = http.createServer(function (req, res) {
     // 获取请求的url
     console.log("请求的url为：" + req.url);
-    res.writeHead(200, {"Content-Type": "text/html;charset=utf8"});
-    res.write("<h1>Hello world</h1>");
+    res.writeHead(404, {"Content-Type": "text/html;charset=utf8"});
+    res.write(`
+    <html>
+      <body><h1>哈哈哈</h1></body>
+    
+    </html>
+    `);
     res.end("<h1>Hello Nodejs</h1>");
 })
 server.listen(3000, function () {
